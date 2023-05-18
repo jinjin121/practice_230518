@@ -1,0 +1,251 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.header .gnb {
+    margin: 0 0 0 auto;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header .gnb>ul>li a {
+    display: block;
+    font-size: 18px;
+}
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    transform: translate(-50%, -50%);
+
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .search {
+    margin: 0 0 0 50px;
+}
+
+.header .search i {
+    font-size: 30px;
+}
+
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .mainSlide figure {
+    height: 600px;
+    position: relative;
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../img/mainvisual01.jpg)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../img/mainvisual02.jpg)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm03 {
+    background: url(../img/mainvisual03.jpg)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    padding: 0 15px;
+}
+
+.mainVisual .mainSlide .slogan strong {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.mainVisual .mainSlide .slogan p {
+    margin: 0 0 30px 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.mainVisual .mainSlide .slogan a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 3px 12px 5px 12px;
+}
+
+.mainVisual .mainSlide .itm02 .slogan strong {
+    color: #444;
+    text-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.mainVisual .mainSlide .itm02 .slogan p {
+    color: #444;
+    text-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* mainSlide끝; */
+.mainVisual .dots {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 585px;
+    transform: translate(-100%, -50%);
+    background: #fff;
+    border: 1px solid#ddd;
+    user-select: none;
+}
+
+.mainVisual .dots li {
+    padding: 10px;
+}
+
+.mainVisual .dots li~li {
+    border-top: 1px solid#ddd;
+}
+
+.mainVisual .dots .btn {
+    cursor: pointer;
+}
+
+.mainVisual .arrows {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    width: 100%;
+}
+
+.mainVisual:hover .arrows {
+    display: block;
+}
+
+.mainVisual .arrows i {
+    font-size: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+
+.mainVisual .arrows .left {
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+.mainVisual .arrows .right {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+/* mainVisual끝*/
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent .tit {
+    margin: 0 auto 30px auto;
+}
+
+.mainContent .tit h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.mainContent .tit p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.mainContent .content {
+    display: flex;
+    gap: 30px;
+}
+
+.mainContent .content figure {
+    flex: 1;
+    text-align: center;
+}
+
+.mainContent .content figure .box {
+    margin: 0 0 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mainContent .content figure strong {
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+.mainContent .content figure a {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 5px 12px;
+}
+
+.mainContent .content figure img {
+    transition: 0.5s;
+}
+
+.mainContent .content figure:hover img {
+    transform: scale(1.2);
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .top {
+    line-height: 80px;
+    border-bottom: 1px solid #555;
+}
+
+.footer address {
+    line-height: 80px;
+}
